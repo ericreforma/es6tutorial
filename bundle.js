@@ -83,7 +83,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 // ES6 Tutorial
 // https://www.youtube.com/watch?v=RBLIm5LMrmc&index=4&list=PLillGF-RfqbZ7s3t6ZInY3NjEOOX7hsBv
 
-// classes and inheritance
+/* Classes and Inheritance */
 var User = function () {
 	function User(username, email, password) {
 		_classCallCheck(this, User);
@@ -109,8 +109,8 @@ var User = function () {
 }();
 
 var NewUser = new User('Eric', 'sample@example.com', 'mypassword');
-NewUser.register();
 
+NewUser.register();
 User.countUsers();
 
 var Member = function (_User) {
@@ -139,7 +139,14 @@ var eric = new Member('Eric', 'email@sample.com', 'mypassword', 'mypackage');
 
 eric.register();
 
-// Template LIterals
+/* Template LIterals */
+
+// used for concatenating long strings and assiging variables inside strings
+//instead of using single qoute use `
+
+var name = 'John';
+var mystring = 'this is a long string,\n\twith strings and another strings Hello ' + name + ', and simple template';
+console.log(mystring);
 
 /***/ })
 /******/ ]);
